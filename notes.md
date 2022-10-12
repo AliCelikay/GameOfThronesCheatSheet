@@ -8,3 +8,4 @@ api's: https://anapioficeandfire.com/Documentation#intro
         https://thronesapi.com/ 
 
 CSS Frameworks: Foundation, Materialize, Bulma, Tailwind ***LOOK INTO
+Chosen CSS Framework: 
