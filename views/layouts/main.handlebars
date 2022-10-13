@@ -22,29 +22,19 @@
 
           <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#">Landing Page</a></li>
-            <li>
-              <a href="#">Sign Up/ Login Page</a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li class="uk-active"><a href="#">Active</a></li>
-                  <li><a href="#">Item</a></li>
-                  <li><a href="#">Item</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Search Page</a></li>
+            <li class="uk-active"><a href="#">Search Page</a></li>
             <li class="uk-active"><a href="#">Saved Features</a></li>
+            <li class="uk-active">
+              {{#if logged_in}}
+              <a id="logout">logout</a>
+              {{else}}
+              <a href="/login">Sign Up/Log In</a>
+              {{/if}}
+            </li>
           </ul>
           </ul>
         </div>
       </nav>
-      <!-- Conditionally render login or logout links -->
-      {{#if logged_in}}
-      <a href="/profile">profile</a> |
-      <button class="no-button" id="logout">logout</button>
-      {{else}}
-      <a href="/login">login</a>
-      {{/if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">
