@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+// These work for creating a new user and logging that user in
 // Adding/ Creating a New user
 router.post('/', async (req, res) => {
   try {
