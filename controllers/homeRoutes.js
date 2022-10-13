@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
     const projects = projectData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('landingPage', { 
       projects, 
       logged_in: req.session.logged_in 
     });
@@ -92,7 +92,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('loginPage');
 });
 
 module.exports = router;
