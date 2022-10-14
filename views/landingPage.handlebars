@@ -1,24 +1,29 @@
 <!-- Loop over each object in the projects array -->
 {{#each projects as |project| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+<h2 class="uk-heading-line uk-text-center"><span>Welcome to the Game of Thrones Cheat Sheet!</span></h2>
+
+<div class="uk-child-width-1-2@m" align="center" uk-grid>
+  <div>
+    <div class="uk-card uk-card-default">
+      <div class="uk-card-media-top">
+        <img src="06-server-side-apis-homework-demo.png" width="1800" height="1200" alt="">
+      </div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title">About Us</h3>
+        <p> Struggling to keep everyone in Game of Thrones intact? We have a easy to use cheat sheet for
+          you! You
+          can find any character information in the show using their name or alias. You can search by
+          house and
+          book as well to pull information. If you have an account you are able to save your favorite
+          characters
+          and houses for easy access later on.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
+</div>
+<div align="center">
+  <button class="uk-button uk-button-secondary uk-button-large">Click here to register and
+    unlock the world of Game of Thrones</button>
 </div>
 {{/each}}
