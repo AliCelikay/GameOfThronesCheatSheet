@@ -2,7 +2,15 @@ const router = require('express').Router();
 const { SavedCharacters, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/',(req,res)=>{
+  res.render('landingPage')
+})
+
+router.get('/search', (req,res)=>{
+  res.render('searchByResults')
+})
+
+router.get('/savedcharacter', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const savedCharacterData = await SavedCharacters.findAll({
@@ -96,15 +104,15 @@ router.get('/login', (req, res) => {
 
   res.render('loginPage');
 });
-router.get('/books', (req, res) => {
-  axios.get("https://www.anapioficeandfire.com/api/books")
-  .then(response => {
-      // now we have the data so we jus tog and bring it to the model
+// router.get('/books', (req, res) => {
+//   axios.get("https://www.anapioficeandfire.com/api/books")
+//   .then(response => {
+//       // now we have the data so we jus tog and bring it to the model
      
-      console.log(response.data);
-      res.render('book', {bookData: response.data})
-  })
-})
+//       console.log(response.data);
+//       res.render('book', {bookData: response.data})
+//   })
+// })
 
 module.exports = router;
 
