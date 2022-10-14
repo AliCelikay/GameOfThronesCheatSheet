@@ -1,13 +1,14 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { SavedCharacters, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const projectData = await Project.findAll({
+    const savedCharacterData = await SavedCharacters.findAll({
       include: [
         {
+          // Change
           model: User,
           attributes: ['name'],
         },
@@ -15,11 +16,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const characters = savedCharacterData.map((character) => character.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('landingPage', { 
-      projects, 
+    res.render('searchByResults', { 
+      characters, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -38,21 +39,22 @@ router.get('/', async (req, res) => {
 // Get Book by ID
     // render the Name, ISDN, Author, # of pages, release date
     // & the POV characters and thir details
-router.get('/project/:id', async (req, res) => {
+router.get('/charecter/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const savedCharacterData = await SavedCharacters.findByPk(req.params.id, {
       include: [
         {
+          // Change
           model: User,
           attributes: ['name'],
         },
       ],
     });
 
-    const project = projectData.get({ plain: true });
+    const character = savedCharacterData.get({ plain: true });
 
-    res.render('project', {
-      ...project,
+    res.render('searchByResults', {
+      ...character,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -76,7 +78,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render('profile', {
+    res.render('searchByResults', {
       ...user,
       logged_in: true
     });
@@ -94,6 +96,15 @@ router.get('/login', (req, res) => {
 
   res.render('loginPage');
 });
+router.get('/books', (req, res) => {
+  axios.get("https://www.anapioficeandfire.com/api/books")
+  .then(response => {
+      // now we have the data so we jus tog and bring it to the model
+     
+      console.log(response.data);
+      res.render('book', {bookData: response.data})
+  })
+})
 
 module.exports = router;
 
