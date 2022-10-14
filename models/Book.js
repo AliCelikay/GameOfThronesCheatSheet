@@ -12,5 +12,6 @@ Book.init(
         isbn: {
             type: DataTypes.
         }
+
     }
 )
