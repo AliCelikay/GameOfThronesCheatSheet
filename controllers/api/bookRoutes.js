@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const axios = require('axios')
-const whateverDB = require('model')
+// const whateverDB = require('model')
 
 
 router.get('/', (req, res) => {
-    axios.get("https://www.anapioficeandfire.com/api/books")
+    axios.get("https://www.anapioficeandfire.com/api/books?page=1&pageSize=12")
         .then(response => {
             // now we have the data so we jus tog and bring it to the model
            
