@@ -1,7 +1,11 @@
 <!-- Loop over each object in the projects array -->
 {{#each projects as |project| }}
+{{!-- Rough draft html template for landing page --}}
+{{!-- Anything w/ uk in class is from UIKIT --}}
+{{!-- Heading --}}
 <h2 class="uk-heading-line uk-text-center"><span>Welcome to the Game of Thrones Cheat Sheet!</span></h2>
 
+{{!-- this is a card that divides horizontally in half and on top displays demo gif of our searches, and on the bottom it prints an About Us section --}}
 <div class="uk-child-width-1-2@m" align="center" uk-grid>
   <div>
     <div class="uk-card uk-card-default">
@@ -22,6 +26,7 @@
     </div>
   </div>
 </div>
+{{!-- button that leads user to the login/sign up site --}}
 <div align="center">
   <button class="uk-button uk-button-secondary uk-button-large">Click here to register and
     unlock the world of Game of Thrones</button>
