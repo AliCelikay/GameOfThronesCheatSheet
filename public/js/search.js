@@ -17,8 +17,25 @@ fetch('/api/books')
     bookMatch(data);
 });
 
-function bookMatch(data){
-if("A Game of Thrones" === data[0].name){
-    console.log(data[0]);
+function bookMatch(bookTitle){
+    // we need to go and fetch the data about this title
+    console.log(bookTitle)
+    fetch(`/api/books/${bookTitle}`)
+    .then(response => response.json())
+    .then(response =>{
+        console.log(response)
+        // with the response we render stuff on page
+        //investigate the response to find the bits of data you definitely want
+        // use a template literal to be passed as html to the root
+        let bookHtml = `<div class="card"><h1>${response[0].name}</h1><h2>${response[0].authors[0]}</h2></div>`
+        // $('#root').text(JSON.stringify(response, null, 2))
+        $('#root').html(bookHtml);
+    })
 }
-}
+bookSelectEl.on('change', (event) => {
+    event.preventDefault();
+    var bookTitle = event.target.value
+    if (bookTitle === '') return;
+    
+    bookMatch(bookTitle);
+})
