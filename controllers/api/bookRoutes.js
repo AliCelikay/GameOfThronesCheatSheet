@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const axios = require('axios')
-const whateverDB = require('model')
+//const whateverDB = require('model')
 
 
 router.get('/', (req, res) => {
