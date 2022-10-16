@@ -68,7 +68,7 @@ var searchCharacterFunction = function (characterInput) {
         .then(response => response.json())
         .then(response => {
             console.log(response)
-            fetch(response[0].allegiances)
+            fetch(response[0].allegiances[0])
                 .then(allegiancesResponse => allegiancesResponse.json())
                 // This promise has all the previous promises passed into it, therefore we can use 'response' and 'allegiancesResponse'
                 .then(allegiancesResponse => {
