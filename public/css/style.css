@@ -1,4 +1,5 @@
-header, .project:not(:last-child) {
+header,
+.project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -21,4 +22,37 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+/* main.handlebars */
+.hero-image {
+  background-image: url(/00-GAME-OF-THRONES-Header.jpg);
+  /* background-color: #cccccc; */
+  height: 300px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* landingPage.handlebars */
+.landing-card {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-submit-btn {
+  margin-top: 10px;
+  background-image: linear-gradient(to bottom right, rgb(0, 126, 168), lightblue);
+}
+
+.btn-text {
+  color: white;
+}
+
+/* searchByResults */
+.character-search {
+  display: flex;
+  flex-wrap: nowrap;
 }

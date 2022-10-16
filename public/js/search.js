@@ -30,9 +30,22 @@ function bookMatch(bookTitle) {
             //investigate the response to find the bits of data you definitely want
             // use a template literal to be passed as html to the root
             // We're getting error on line 34, check w/ instructor
-            let bookHtml = `<div class="card"><h1>${response[0].name}</h1><h2>${response[0].authors[0]}</h2><h3>${response[0].isbn}</h3><h3>${response[0].authors}</h3><h3>${response[0].numberOfPages}</h3><h3>${response[0].released}</h3></div>`
+            let bookHtml = `<h1 class="uk-heading-divider">Searched Book</h1>
+            <div class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+            <h1>Title: ${response[0].name}</h2>
+            <h2>Author: ${response[0].authors[0]}</h2>
+            <h2>ISBN: ${response[0].isbn}</h2>
+            <h2>Pages: ${response[0].numberOfPages}</h2>
+            <h2>Release Date: ${response[0].released}</h2>
+            </div>
+            </div>
+            </div>
+            </div>`
             // $('#root').text(JSON.stringify(response, null, 2))
-            $('#root').html(bookHtml);
+            $('#display-book').html(bookHtml);
         })
 }
 bookSelectEl.on('change', (event) => {
@@ -63,12 +76,23 @@ var searchCharacterFunction = function (characterInput) {
                     // with the response we render stuff on page
                     //investigate the response to find the bits of data you definitely want
                     // use a template literal to be passed as html to the root
-                    let characterHtml = `<div class="card"><h1>Name: ${response[0].name}</h1>
+                    let characterHtml = `
+                    <h1 class="uk-heading-divider">Searched Character</h1>
+                    <div class="uk-card uk-card-default uk-width-1-2@m">
+                    <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                    <h1>Name: ${response[0].name}</h1>
                     <h2>Culture: ${response[0].culture}</h2>
-                    <h3>Aliases: ${response[0].aliases}</h3>
-                    <h3>Title: ${response[0].titles}</h3>
-                    <h3>House: ${allegiancesResponse.name}</h3></div>`
+                    <h2>Aliases: ${response[0].aliases}</h2>
+                    <h2>Title: ${response[0].titles}</h2>
+                    <h2>House: ${allegiancesResponse.name}</h2>
+                    </div>
+                    </div>
+                    </div>
+                    </div>`
                     $('#character-html').html(characterHtml);
                 })
         })
 }
+
