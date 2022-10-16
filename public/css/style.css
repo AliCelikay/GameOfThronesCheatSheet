@@ -3,6 +3,10 @@ header,
   border-bottom: 1px solid #ccc;
 }
 
+:root {
+  background-color: #D8C5A7;
+}
+
 .no-button {
   background: none;
   border: none;
@@ -25,8 +29,8 @@ header,
 }
 
 /* main.handlebars */
-.hero-image {
-  background-image: url(/00-GAME-OF-THRONES-Header.jpg);
+.uk-background-height-1-1		 {
+  background-image: url(../Images/Cropped-GOT.jpg);
   /* background-color: #cccccc; */
   height: 300px;
   width: auto;
@@ -35,6 +39,42 @@ header,
   background-size: cover;
   position: relative;
 }
+
+.uk-navbar-container{
+  margin-block-start: auto;
+ 
+}
+
+.uk-navbar-nav {
+  background-color: #5E4C39;
+}
+
+.uk-navbar-nav>li.uk-active>a{
+  color: #C7B497;
+
+}
+
+h1{
+  margin-block-start: auto;
+  color: #5E4C39;
+}
+
+a {
+  color: #5E4C39;
+}
+
+h2 {
+  font-size: 2rem;
+  background-color: #A69D7B;
+  text-align: CENTER;
+  border-radius: 25px;
+}
+
+.btn.btn-primary {
+    background-color: #A69D7B;
+    color: #3C2B1D;
+    border-radius:25px;
+}   
 
 /* landingPage.handlebars */
 .landing-card {
@@ -55,4 +95,8 @@ header,
 .character-search {
   display: flex;
   flex-wrap: nowrap;
+}
+
+.uk-button {
+  background-color: #A69D7B;
 }

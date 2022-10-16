@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS houses_db;
-CREATE DATABASE houses_db;
+DROP DATABASE IF EXISTS got_db;
+CREATE DATABASE got_db;
 
-USE houses_db;
+USE got_db;
