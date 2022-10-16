@@ -1,5 +1,8 @@
 // alert("working")
 // const bookNames = []
+
+const axios = require('axios');
+
 const bookSelectEl = $('#book-select');
 const characterSearchEl = $('#character-search-el');
 const submitBtn = $('#submit-btn-el');
@@ -68,7 +71,7 @@ var searchCharacterFunction = function (characterInput) {
         .then(response => response.json())
         .then(response => {
             console.log(response)
-            fetch(response[0].allegiances)
+            fetch(response[0].allegiances[0])
                 .then(allegiancesResponse => allegiancesResponse.json())
                 // This promise has all the previous promises passed into it, therefore we can use 'response' and 'allegiancesResponse'
                 .then(allegiancesResponse => {
@@ -86,7 +89,7 @@ var searchCharacterFunction = function (characterInput) {
                     <h2>Culture: ${response[0].culture}</h2>
                     <h2>Aliases: ${response[0].aliases}</h2>
                     <h2>Title: ${response[0].titles}</h2>
-                    <h2>House: ${allegiancesResponse.name}</h2>
+                    <h2>Houses: ${allegiancesResponse[0].name}</h2>
                     </div>
                     </div>
                     </div>
