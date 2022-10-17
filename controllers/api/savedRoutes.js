@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { SavedCharacters } = require('../../models');
+const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 const axios = require('axios');
 
@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
   });
 
 // POST a new note
-router.post('/', withAuth, async (req, res) => {
+router.post('/saved', withAuth, async (req, res) => {
     try
     {
         const commentData = await Comment.create({
@@ -61,3 +61,5 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;
