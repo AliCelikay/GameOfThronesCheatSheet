@@ -10,14 +10,21 @@ router.get('/:character', (req, res) => {
     });
 })
 
-// router.get('/:aliase', (req, res) => {
-//     let apiUrl = `https://www.anapioficeandfire.com/api/characters/?aliases=${req.params.aliase}`
-//     axios.get(apiUrl)
-//     .then(response => {
-//         console.log(response.data);
-//        res.json(response.data);
-//     });
-// })
+// route to save a Character
+router.post('/', async (req, res) => {
+    try {
+      const characterData = await Character.create({
+        name: req.body.name,
+        culture: req.body.culture,
+        aliases: req.body.aliases,
+        title: req.body.title,
+        house: req.body.house,
+      });
+      res.status(200).json(characterData);
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  });
 
 
 module.exports = router;
