@@ -40,11 +40,12 @@ router.get('/login', (req, res) => {
 });
 
 
+
+
+
 router.get('/search', async (req,res)=>{
 //Houses.findall().then =>
-let houseData = await Houses.findAll().catch((err) => {
-  res.json(err);
-});
+let houseData = await Houses.findAll();
 const houses = houseData.map((house) => house.get({ plain: true}));
 
   // res.render('searchByResults', {
@@ -70,6 +71,7 @@ router.get('/saved', withAuth, async (req,res)=>{
   })
 })
 
+<<<<<<< HEAD
 
 // router.get('/savedcharacter', async (req, res) => {
 //   try {
@@ -96,6 +98,8 @@ router.get('/saved', withAuth, async (req,res)=>{
 //     res.status(500).json(err);
 //   }
 // });
+=======
+>>>>>>> f16d3ec1e039e0623c44a88a0edb65854490f1eb
 
 
 //GET House by id 
