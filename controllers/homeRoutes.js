@@ -39,13 +39,6 @@ router.get('/login', (req, res) => {
   res.render('loginPage');
 });
 
-// const dishData = await Dish.findAll().catch((err) => { 
-//   res.json(err);
-// });
-//   const dishes = dishData.map((dish) => dish.get({ plain: true }));
-//   res.render('all', { dishes });
-// });
-
 
 router.get('/search', async (req,res)=>{
 //Houses.findall().then =>
@@ -130,10 +123,6 @@ router.get('/charecter/:id', async (req, res) => {
 // GET & render saved character
 
 // GET & render saved House
-
-
-
-
 
 // router.get('/books', (req, res) => {
 //   axios.get("https://www.anapioficeandfire.com/api/books")
