@@ -82,11 +82,11 @@ var searchCharacterFunction = function (characterInput) {
                     <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
-                    <h1>Name: ${response[0].name}</h1>
-                    <h2>Culture: ${response[0].culture}</h2>
-                    <h2>Aliases: ${response[0].aliases}</h2>
-                    <h2>Title: ${response[0].titles}</h2>
-                    <h2>House: ${allegiancesResponse.name}</h2>
+                    <h4>Name: ${response[0].name}</h4>
+                    <h4>Culture: ${response[0].culture}</h4>
+                    <h4>Aliases: ${response[0].aliases}</h4>
+                    <h4>Title: ${response[0].titles}</h4>
+                    <h4>House: ${allegiancesResponse.name}</h4>
                     </div>
                     </div>
                     </div>
