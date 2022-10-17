@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { SavedCharacters, User } = require('../models');
+const { Character, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req,res) =>{
@@ -46,37 +46,22 @@ router.get('/search', (req,res)=>{
   })
 })
 
-router.get('/saved', withAuth, (req,res)=>{
+router.get('/saved', withAuth, async (req,res)=>{
+  // get all the saved data that we want to display for this user
+  //we already passed auth so we know who the user is
+  console.log('saved route has been hit')
+  const usersSaved = await Character.findAll({where: {
+    user_id: req.session.user_id,
+  }});
+  const savedCharacters = await usersSaved.map(char=>char.get({plain: true}));
+  console.log(savedCharacters);
+
   res.render('savedFeatures', {
-    logged_in: true
+    logged_in: true,
+    savedCharacters
   })
 })
 
-// router.get('/savedcharacter', async (req, res) => {
-//   try {
-//     // Get all projects and JOIN with user data
-//     const savedCharacterData = await SavedCharacters.findAll({
-//       include: [
-//         {
-//           // Change
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-
-//     // Serialize data so the template can read it
-//     const characters = savedCharacterData.map((character) => character.get({ plain: true }));
-
-//     // Pass serialized data and session flag into template
-//     res.render('searchByResults', { 
-//       characters, 
-//       logged_in: req.session.logged_in 
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 
 //GET House by id 
@@ -116,18 +101,5 @@ router.get('/charecter/:id', async (req, res) => {
 
 // GET & render saved House
 
-
-
-
-
-// router.get('/books', (req, res) => {
-//   axios.get("https://www.anapioficeandfire.com/api/books")
-//   .then(response => {
-//       // now we have the data so we jus tog and bring it to the model
-     
-//       console.log(response.data);
-//       res.render('book', {bookData: response.data})
-//   })
-// })
 
 module.exports = router;

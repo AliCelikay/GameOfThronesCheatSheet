@@ -1,12 +1,34 @@
-{{!-- This rough draft html template will be split in half with the top being saved charecters and the bottom half being saved houses. We will be storing charecter and house info using a table from uikit. Inside table will be a short description and a button that opens a model with more info inside --}}
+{{!-- This rough draft html template will be split in half with the top being saved charecters and the bottom half being
+saved houses. We will be storing charecter and house info using a table from uikit. Inside table will be a short
+description and a button that opens a model with more info inside --}}
 <div align="center">
   <div>
-    <h3 class="uk-heading-bullet">Saved Charecters</h3>
+    <h3 class="uk-heading-bullet">Saved Characters</h3>
 
-    <ul id="save-charecters">
-      {{!-- dummy info --}}
-      <li>Charecter 1</li>
-    
+    <ul id="save-characters">
+      {{!-- {{#if SavedCharacters.length}} --}}
+      {{#each savedCharacters as |char|}}
+      <li>
+        <div class="uk-card uk-card-default uk-width-1-2@m">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-expand">
+                <h1 id="char-name">Name: {{char.name}}</h1>
+                <h2 id="char-culture" value="">Culture: {{char.culture}}</h2>
+                <h2 id="char-aliases" value="">Aliases: {{char.aliases}}</h2>
+                <h2 id="char-title" value="">Title: {{char.title}}</h2>
+                <h2 id="char-house" value="">Houses: {{char.house}}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+
+      {{/each}}
+      {{!-- {{/if}} --}}
+
+
     </ul>
   </div>
 
@@ -21,4 +43,5 @@
 </div>
 
 
-<script src="/js/favorites"></script>
+<script src="/js/favorites.js"></script>
+{{!-- <script src="/js/saveCharacters"></script> --}}
