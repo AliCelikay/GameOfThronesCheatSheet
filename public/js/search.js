@@ -38,11 +38,11 @@ function bookMatch(bookTitle) {
             <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-expand">
-            <h1>Title: ${response[0].name}</h2>
-            <h2>Author: ${response[0].authors[0]}</h2>
-            <h2>ISBN: ${response[0].isbn}</h2>
-            <h2>Pages: ${response[0].numberOfPages}</h2>
-            <h2>Release Date: ${response[0].released}</h2>
+            <h4>Title: ${response[0].name}</h4>
+            <h4>Author: ${response[0].authors[0]}</h4>
+            <h4>ISBN: ${response[0].isbn}</h4>
+            <h4>Pages: ${response[0].numberOfPages}</h4>
+            <h4>Release Date: ${response[0].released}</h4>
             </div>
             </div>
             </div>
