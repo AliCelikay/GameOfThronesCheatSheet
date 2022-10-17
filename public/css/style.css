@@ -1,12 +1,30 @@
+:root {
+  --darkest: #3C2B1D;
+  --dark: #5E4C39;
+  --medium:#A69D7B;
+  --light: #D8C5A7;
+  --lightest: #C7B497;
+  background-color: var(--lightest);
+}
+
 header,
 .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
-:root {
-  background-color: #D8C5A7;
+.uk-heading-line>* {
+  display: inline-block;
+  position: relative;
+  color: var(--dark);
 }
 
+.uk-heading-line>::after, .uk-heading-line>::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - (calc(0.2px + 0.05em)/ 2));
+  width: 2000px;
+  border-bottom: calc(0.2px + 0.05em) solid var(--dark);
+}
 .no-button {
   background: none;
   border: none;
@@ -28,6 +46,20 @@ header,
   margin-left: -5px;
 }
 
+.uk-navbar-nav>li.uk-active>a  {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--dark);
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--lightest) 0%, var(--lightest) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
+  border-bottom: solid 5px var(--dark);
+}
+
 /* main.handlebars */
 .uk-background-height-1-1		 {
   background-image: url(../Images/Cropped-GOT.jpg);
@@ -46,35 +78,40 @@ header,
 }
 
 .uk-navbar-nav {
-  background-color: #5E4C39;
+  background-color: var(--dark);
 }
 
 .uk-navbar-nav>li.uk-active>a{
-  color: #C7B497;
+  color: var(--lightest);
 
 }
 
 h1{
   margin-block-start: auto;
-  color: #5E4C39;
+  color: var(--dark);
 }
 
 a {
-  color: #5E4C39;
+  color: var(--dark);
 }
 
 h2 {
   font-size: 2rem;
-  background-color: #A69D7B;
+  background-color: var(--medium);
   text-align: CENTER;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .btn.btn-primary {
-    background-color: #A69D7B;
+    background-color: var(--medium);
     color: #3C2B1D;
-    border-radius:25px;
+    border-radius:10px;
 }   
+
+.uk-grid>*>:last-child{
+  background-color: #5e4c399c;
+}
+
 
 /* landingPage.handlebars */
 .landing-card {
@@ -84,11 +121,35 @@ h2 {
 
 .landing-submit-btn {
   margin-top: 10px;
-  background-image: linear-gradient(to bottom right, rgb(0, 126, 168), lightblue);
+  background-image: var(--medium);
+  color:var(--darkest);
+  border-color: var(--darkest);
+  border-radius: 10px;
 }
 
 .btn-text {
-  color: white;
+  color: var(--darkest);
+}
+
+.uk-card-default {
+  background-color: var(--light);
+  color: var(--light);
+  box-shadow: 0 5px 15px var(--dark);
+}
+
+.uk-card {
+ background-color: var(--light);
+}
+
+.uk-card-default .uk-card-title {
+color: var(--dark);
+background-color:var(--lightest);
+text-align: center;
+border-radius:10px;
+}
+
+.uk-card-default :hover {
+  background-color: var(--medium);
 }
 
 /* searchByResults */
@@ -98,5 +159,16 @@ h2 {
 }
 
 .uk-button {
-  background-color: #A69D7B;
+  background-color:var(--medium);
+}
+
+
+
+/* login/logout */
+[class*='col-'] {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #5e4c399c;
 }
