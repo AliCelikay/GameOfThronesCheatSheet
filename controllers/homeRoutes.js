@@ -10,6 +10,10 @@ router.get('/search', (req,res)=>{
   res.render('searchByResults')
 })
 
+router.get('/saved', (req,res)=>{
+  res.render('savedFeatures')
+})
+
 router.get('/savedcharacter', async (req, res) => {
   try {
     // Get all projects and JOIN with user data

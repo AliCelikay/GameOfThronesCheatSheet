@@ -19,21 +19,21 @@ Houses.init(
     },
     coatOfArms: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     words: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     titles: {
       type: DataTypes.STRING,
       // defaultValue: [],
-      allowNull: false,
+      allowNull: true,
     },
     seats: {
       type: DataTypes.STRING,
       // defaultValue: [],
-      allowNull: false,
+      allowNull: true,
     },
     user_id: {
       type: DataTypes.INTEGER,

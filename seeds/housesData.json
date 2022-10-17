@@ -3,7 +3,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/7",
         "name": "House Arryn of the Eyrie",
         "region": "The Vale",
-        "coatOfArms": "A sky-blue falcon soaring against a white moon, on a sky-blue field(Bleu celeste, upon a plate a falcon volant of the field)",
+        "coatOfArms": "A sky-blue falcon soaring against a white moon, on a sky-blue field",
         "words": "As High as Honor",
         "titles": [
             "King of Mountain and Vale (formerly)",
@@ -20,7 +20,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/10",
         "name": "House Baelish of Harrenhal",
         "region": "The Riverlands",
-        "coatOfArms": "A field of silver mockingbirds, on a green field(Vert, semé of mockingbirds argent)",
+        "coatOfArms": "A field of silver mockingbirds, on a green field",
         "words": "",
         "titles": [
             "Lord Paramount of the Trident",
@@ -34,7 +34,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/17",
         "name": "House Baratheon of Storm's End",
         "region": "The Stormlands",
-        "coatOfArms": "A black crowned stag, on a gold field(Or, a stag salient, crowned, sable)",
+        "coatOfArms": "A black crowned stag, on a gold field",
         "words": "Ours is the Fury",
         "titles": [
             "Lord of Storm's End",
@@ -49,7 +49,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/34",
         "name": "House Bolton of the Dreadfort",
         "region": "The North",
-        "coatOfArms": "A red flayed man on pink de sang",
+        "coatOfArms": "A red flayed man",
         "words": "Our Blades are Sharp",
         "titles": [
             "Red King (Age of Heroes)",
@@ -64,7 +64,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/37",
         "name": "House Bracken of Stone Hedge",
         "region": "The Riverlands",
-        "coatOfArms": "A red stallion upon a gold shield, on a brown field(Tenné, on an escutcheon or a stallion rampant gules)",
+        "coatOfArms": "A red stallion upon a gold shield, on a brown field",
         "words": "",
         "titles": [
             ""
@@ -77,7 +77,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/60",
         "name": "House Caron of Nightsong",
         "region": "The Stormlands",
-        "coatOfArms": "A field of black nightingales on yellow(Or, semé of nightingales sable)",
+        "coatOfArms": "A field of black nightingales on yellow",
         "words": "No Song so Sweet",
         "titles": [
             "Lord of the Marches",
@@ -104,7 +104,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/72",
         "name": "House Clegane",
         "region": "The Westerlands",
-        "coatOfArms": "Three dogs on a yellow field(Or, three dogs courant in pale sable)",
+        "coatOfArms": "Three dogs on a yellow field",
         "words": "",
         "titles": [
             "Ser"
@@ -117,7 +117,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/81",
         "name": "House Corbray of Heart's Home",
         "region": "",
-        "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+        "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field",
         "words": "",
         "titles": [
             "Lord of Heart's Home",
@@ -131,7 +131,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/97",
         "name": "House Darry of Darry",
         "region": "The Riverlands",
-        "coatOfArms": "A black plowman on a brown field(Tenné, a plowman sable)",
+        "coatOfArms": "A black plowman on a brown field",
         "words": "",
         "titles": [
             ""
@@ -144,7 +144,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/99",
         "name": "House Dayne of Starfall",
         "region": "Dorne",
-        "coatOfArms": "A white sword and falling star crossed on lilac (Purpure, a blazing star bendways surmounted by a sword bendways sinister argent)",
+        "coatOfArms": "A white sword and falling star crossed on lilac",
         "words": "",
         "titles": [
             "Lord of Starfall",
@@ -158,7 +158,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/102",
         "name": "House Dondarrion of Blackhaven",
         "region": "The Stormlands",
-        "coatOfArms": "A forked purple lightning bolt, on black field speckled with four-pointed stars(Sable, semé of mullets of four points argent, a lightning bolt forked purpure)",
+        "coatOfArms": "A forked purple lightning bolt, on black field speckled with four-pointed stars",
         "words": "",
         "titles": [
             "Lord of Blackhaven"
@@ -186,7 +186,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/120",
         "name": "House Farman of Faircastle",
         "region": "The Westerlands",
-        "coatOfArms": "Three silver ships on a blue field with a border of crimson and gold(Azure, three galleys argent within a bordure compony gules and or)",
+        "coatOfArms": "Three silver ships on a blue field with a border of crimson and gold",
         "words": "",
         "titles": [
             "Lord of Fair Isle"
@@ -199,7 +199,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/143",
         "name": "House Frey of the Crossing",
         "region": "The Riverlands",
-        "coatOfArms": "Two blue towers, united by a bridge, on a silver-grey field(Cendrée, a bridge azure, at either end a tower of the same)",
+        "coatOfArms": "Two blue towers, united by a bridge, on a silver-grey field",
         "words": "",
         "titles": [
             "Lord of the Crossing"
@@ -225,7 +225,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/160",
         "name": "House Grafton of Gulltown",
         "region": "The Vale",
-        "coatOfArms": "A yellow tower, burning, on a black pile, on a flame-red field(Gules, on a pile sable a tower or with flames issuant from the battlements proper)",
+        "coatOfArms": "A yellow tower, burning, on a black pile, on a flame-red field",
         "words": "",
         "titles": [
             "Lord of Gulltown"
@@ -298,7 +298,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/229",
         "name": "House Lannister of Casterly Rock",
         "region": "The Westerlands",
-        "coatOfArms": "A gold lion, on a crimson field(Gules, a lion or)",
+        "coatOfArms": "A gold lion, on a crimson field",
         "words": "Hear Me Roar!",
         "titles": [
             "King of the Rock (formerly) Lord of Casterly Rock",
@@ -313,7 +313,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/254",
         "name": "House Mallister of Seagard",
         "region": "The Riverlands",
-        "coatOfArms": "A silver eagle, displayed, on an indigo field(Purpure, an eagle displayed argent)",
+        "coatOfArms": "A silver eagle, displayed, on an indigo field",
         "words": "Above the Rest",
         "titles": [
             "Lord of Seagard"
@@ -346,7 +346,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/258",
         "name": "House Marbrand of Ashemark",
         "region": "The Westerlands",
-        "coatOfArms": "An orange burning tree, on a smoky field(Cendrée, a tree in flame tenné)",
+        "coatOfArms": "An orange burning tree, on a smoky field",
         "words": "Burning bright",
         "titles": [
             ""
@@ -414,7 +414,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/319",
         "name": "House Reyne of Castamere",
         "region": "The Westerlands",
-        "coatOfArms": "A red lion rampant regardant with a forked tail, with gold teeth and claws, on a silver field(Argent, a lion rampant regardant queue-fourché gules, armed and langued or)",
+        "coatOfArms": "A red lion rampant regardant with a forked tail, with gold teeth and claws, on a silver field",
         "words": "",
         "titles": [
             "Lord of Castamere"
@@ -440,7 +440,7 @@
         "url": "https://www.anapioficeandfire.com/api/houses/328",
         "name": "House Royce of Runestone",
         "region": "The Vale",
-        "coatOfArms": "Black iron studs on a bronze field, bordered with runes(Tenné pelletée, an orle of ancient runes sable)",
+        "coatOfArms": "Black iron studs on a bronze field, bordered with runes",
         "words": "We Remember",
         "titles": [
             "High King of the Vale, the Fingers and the Mountains of the Moon (formerly)",

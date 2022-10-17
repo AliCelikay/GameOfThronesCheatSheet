@@ -13,6 +13,17 @@
     </div>
   </div>
 
+   <div class="uk-margin">
+    <label class="uk-form-label" for="form-horizontal-select">Select House</label>
+    <div class="uk-form-controls">
+      <select class="uk-select" name="" id="house-select">
+        {{#each houses as |house|}}
+        <option value="{{house.name}}">{{house.name}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
   <div class="uk-margin">
     {{!-- Search Character --}}
     <label class="uk-form-label" for="form-horizontal-text">Search Character</label>
@@ -24,8 +35,14 @@
   </div>
 </form>
 
+
+
 {{!-- display selected character --}}
-<div id="character-html" >
+<div id="character-html">
+</div>
+
+{{!-- display selected house --}}
+<div id="display-house">
 </div>
 
 {{!-- display selected book --}}

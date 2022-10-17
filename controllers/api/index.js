@@ -9,6 +9,7 @@ router.use('/users', userRoutes);
 router.use('/projects', projectRoutes);
 router.use('/books', bookRoutes);
 router.use('/characters', characterRoutes);
+// router.use('/houses', houseRoutes);
 // router.use('/savedRoutes', savedRoutes);
 
 module.exports = router;
