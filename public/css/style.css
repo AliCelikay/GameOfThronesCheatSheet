@@ -145,6 +145,9 @@ h4 {
   border-color: var(--darkest);
   border-radius: 10px;
 }
+.uk-card-media-top {
+  background-image: url(../Images/map.jpeg);
+}
 
 #cod-html {
   text-align:center;
