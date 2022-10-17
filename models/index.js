@@ -1,7 +1,7 @@
 const User = require('./User');
 const Character = require('./SavedCharacters');
 const Houses = require('./Houses');
-const Comment = require('./Comment')
+// const Comment = require('./Comment')
 
 // A user can save many characters
 User.hasMany(Character, {
