@@ -2,6 +2,7 @@
 <h2 class="uk-heading-line uk-text-center"><span> Returned Raven</span></h2>
 
 
+<div class=" uk-card-default">
 <form class="uk-form-horizontal uk-margin-large">
 
   <div class="uk-margin">
@@ -9,17 +10,6 @@
     <div class="uk-form-controls">
       <select class="uk-select" name="" id="book-select">
         <option value=""></option>
-      </select>
-    </div>
-  </div>
-
-   <div class="uk-margin">
-    <label class="uk-form-label" for="form-horizontal-select">Select House</label>
-    <div class="uk-form-controls">
-      <select class="uk-select" name="" id="house-select">
-        {{#each houses as |house|}}
-        <option value="{{house.name}}">{{house.name}}</option>
-        {{/each}}
       </select>
     </div>
   </div>
@@ -35,14 +25,8 @@
   </div>
 </form>
 
-
-
 {{!-- display selected character --}}
-<div id="character-html">
-</div>
-
-{{!-- display selected house --}}
-<div id="display-house">
+<div id="character-html" >
 </div>
 
 {{!-- display selected book --}}
