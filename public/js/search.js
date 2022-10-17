@@ -4,6 +4,7 @@
 // const axios = require('axios');
 
 const bookSelectEl = $('#book-select');
+const houseSelectEl = $('#house-select');
 const characterSearchEl = $('#character-search-el');
 const submitBtn = $('#submit-btn-el');
 
@@ -58,6 +59,45 @@ bookSelectEl.on('change', (event) => {
     bookMatch(bookTitle);
 })
 
+
+
+function houseMatch(houseId) {
+    // we need to go and fetch the data about this title
+    console.log(houseId)
+    fetch(`/api/houses/${houseId}`)
+        .then(response => response.json())
+        .then(response => {
+            console.log(response)
+            // with the response we render stuff on page
+            //investigate the response to find the bits of data you definitely want
+            // use a template literal to be passed as html to the root
+            // We're getting error on line 34, check w/ instructor
+            let houseHtml = `<h1 class="uk-heading-divider">Selected House</h1>
+            <div class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+            <h1>Name: ${response.name}</h2>
+            <h2>Region: ${response.region}</h2>
+            <h2>Coat of Arms: ${response.coatOfArms}</h2>
+            <h2>Words: ${response.words}</h2>
+            <h2>Titles: ${response.titles}</h2>
+            <h2>Seats: ${response.seats}</h2>
+            </div>
+            </div>
+            </div>
+            </div>`
+            // $('#root').text(JSON.stringify(response, null, 2))
+            $('#display-house').html(houseHtml);
+        })
+}
+
+houseSelectEl.on('change', (event) => {
+    event.preventDefault();
+    var houseId = event.target.value
+    if (houseId === '') return;
+    houseMatch(houseId);
+})
 
 submitBtn.on("click", function (event) {
     event.preventDefault();

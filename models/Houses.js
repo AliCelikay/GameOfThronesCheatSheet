@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Houses extends Model { }
+class Houses extends Model {}
 
 Houses.init(
   {
-    url_id: {
+    url: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -19,21 +19,21 @@ Houses.init(
     },
     coatOfArms: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     words: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     titles: {
       type: DataTypes.STRING,
       // defaultValue: [],
-      allowNull: false,
+      allowNull: true,
     },
     seats: {
       type: DataTypes.STRING,
       // defaultValue: [],
-      allowNull: false,
+      allowNull: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
