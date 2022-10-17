@@ -50,11 +50,12 @@ header,
 }
 
 
-
-
 /* main.handlebars */
+
 .uk-background-height-1-1 {
   background-image: url(../Images/Cropped-GOT.jpg);
+
+
   /* background-color: #cccccc; */
   height: 300px;
   width: auto;
