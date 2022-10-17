@@ -13,7 +13,7 @@
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2 hero-image">
+    <header class="display-flex justify-space-between align-center p-2 header-image">
       <h1>
         <span role="img" aria-label="money">⚔️</span>
         <a href="/">Game of Thrones Cheat Sheet!</a>
@@ -48,9 +48,9 @@
   </div>
 
   <!-- Render script for logged in users only -->
-  {{#if logged_in}}
+  {{!-- {{#if logged_in}} --}}
   <script src="/js/logout.js"></script>
-  {{/if}}
+  {{!-- {{/if}} --}}
   {{!-- UIKIT --}}
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
 
