@@ -133,9 +133,9 @@ h4 {
   border-radius: 10px;
 }
 
-.uk-grid>*>:last-child {
+/* .uk-grid>*>:last-child {
   background-color: var(--medium-dark);
-}
+} */
 
 
 /* landingPage.handlebars */
@@ -173,14 +173,22 @@ h4 {
   border-radius: 10px;
 }
 
-.uk-card-default :hover {
+/* .uk-card-default :hover {
   background-color: var(--medium);
-}
+} */
 
 .uk-card-default .uk-card-header {
   border-bottom: 1px solid var(--light);
 }
 
+.uk-width-expand {
+  flex: 1;
+  min-width: 1px;
+  text-align: center;
+}
+p {
+background-color: var(--medium);
+}
 /* searchByResults */
 .character-search {
   display: flex;
