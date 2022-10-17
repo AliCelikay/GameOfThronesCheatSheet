@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { SavedCharacters, User, Houses } = require('../models');
+const { Character, User, Houses } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req,res) =>{
@@ -54,11 +54,22 @@ const houses = houseData.map((house) => house.get({ plain: true}));
   res.render('searchByResults', {houses})
 })
 
-router.get('/saved', withAuth, (req,res)=>{
+router.get('/saved', withAuth, async (req,res)=>{
+  // get all the saved data that we want to display for this user
+  //we already passed auth so we know who the user is
+  console.log('saved route has been hit')
+  const usersSaved = await Character.findAll({where: {
+    user_id: req.session.user_id,
+  }});
+  const savedCharacters = await usersSaved.map(char=>char.get({plain: true}));
+  console.log(savedCharacters);
+
   res.render('savedFeatures', {
-    logged_in: true
+    logged_in: true,
+    savedCharacters
   })
 })
+
 
 // router.get('/savedcharacter', async (req, res) => {
 //   try {
