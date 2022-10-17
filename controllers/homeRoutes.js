@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Character, User } = require('../models');
+const { Character, User, Houses } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req,res) =>{
@@ -40,11 +40,12 @@ router.get('/login', (req, res) => {
 });
 
 
+
+
+
 router.get('/search', async (req,res)=>{
 //Houses.findall().then =>
-let houseData = await Houses.findAll().catch((err) => {
-  res.json(err);
-});
+let houseData = await Houses.findAll();
 const houses = houseData.map((house) => house.get({ plain: true}));
 
   // res.render('searchByResults', {
