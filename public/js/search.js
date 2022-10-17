@@ -1,5 +1,8 @@
 // alert("working")
 // const bookNames = []
+
+// const axios = require('axios');
+
 const bookSelectEl = $('#book-select');
 const characterSearchEl = $('#character-search-el');
 const submitBtn = $('#submit-btn-el');
@@ -82,15 +85,16 @@ var searchCharacterFunction = function (characterInput) {
                     <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
-                    <h1>Name: ${response[0].name}</h1>
-                    <h2>Culture: ${response[0].culture}</h2>
-                    <h2>Aliases: ${response[0].aliases}</h2>
-                    <h2>Title: ${response[0].titles}</h2>
-                    <h2>House: ${allegiancesResponse.name}</h2>
+                    <h1 id="name">Name: ${response[0].name}</h1>
+                    <h2 id="culture">Culture: ${response[0].culture}</h2>
+                    <h2 id="aliases">Aliases: ${response[0].aliases}</h2>
+                    <h2 id="title">Title: ${response[0].titles}</h2>
+                    <h2 id="house">Houses: ${allegiancesResponse.name}</h2>
                     </div>
                     </div>
                     </div>
-                    </div>`
+                    </div>
+                    <button id="save-character" class="uk-button uk-button-default">Save Character</button>`
                     $('#character-html').html(characterHtml);
                 })
         })
