@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { SavedCharacters, User } = require('../models');
+const { SavedCharacters, User, Houses } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req,res) =>{
@@ -39,11 +39,26 @@ router.get('/login', (req, res) => {
   res.render('loginPage');
 });
 
-router.get('/search', (req,res)=>{
+// const dishData = await Dish.findAll().catch((err) => { 
+//   res.json(err);
+// });
+//   const dishes = dishData.map((dish) => dish.get({ plain: true }));
+//   res.render('all', { dishes });
+// });
 
-  res.render('searchByResults', {
-    logged_in: req.session.logged_in
-  })
+
+router.get('/search', async (req,res)=>{
+//Houses.findall().then =>
+let houseData = await Houses.findAll().catch((err) => {
+  res.json(err);
+});
+const houses = houseData.map((house) => house.get({ plain: true}));
+
+  // res.render('searchByResults', {
+  //   logged_in: req.session.logged_in,
+  //   houses: ['all', { houses }]
+  // })
+  res.render('searchByResults', {houses})
 })
 
 router.get('/saved', withAuth, (req,res)=>{

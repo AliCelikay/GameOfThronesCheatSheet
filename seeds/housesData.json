@@ -5,16 +5,8 @@
         "region": "The Vale",
         "coatOfArms": "A sky-blue falcon soaring against a white moon, on a sky-blue field",
         "words": "As High as Honor",
-        "titles": [
-            "King of Mountain and Vale (formerly)",
-            "Lord of the Eyrie",
-            "Defender of the Vale",
-            "Warden of the East"
-        ],
-        "seats": [
-            "The Eyrie (summer)",
-            "Gates of the Moon (winter)"
-        ]
+        "titles": "Lord of the Eyrie",
+        "seats": "The Eyrie (summer)"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/10",
@@ -22,13 +14,8 @@
         "region": "The Riverlands",
         "coatOfArms": "A field of silver mockingbirds, on a green field",
         "words": "",
-        "titles": [
-            "Lord Paramount of the Trident",
-            "Lord of Harrenhal"
-        ],
-        "seats": [
-            "Harrenhal"
-        ]
+        "titles": "Lord Paramount of the Trident",
+        "seats": "Harrenhal"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/17",
@@ -36,14 +23,8 @@
         "region": "The Stormlands",
         "coatOfArms": "A black crowned stag, on a gold field",
         "words": "Ours is the Fury",
-        "titles": [
-            "Lord of Storm's End",
-            "Lord Paramount of the Stormlands"
-        ],
-        "seats": [
-            "Storm's End",
-            "Dragonstone (House Baratheon of Dragonstone)"
-        ]
+        "titles": "Lord of Storm's End",
+        "seats": "Storm's End"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/34",
@@ -51,14 +32,8 @@
         "region": "The North",
         "coatOfArms": "A red flayed man",
         "words": "Our Blades are Sharp",
-        "titles": [
-            "Red King (Age of Heroes)",
-            "Lord of the Dreadfort",
-            "Warden of the North"
-        ],
-        "seats": [
-            "The Dreadfort"
-        ]
+        "titles": "Lord of the Dreadfort",
+        "seats": "The Dreadfort"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/37",
@@ -66,12 +41,8 @@
         "region": "The Riverlands",
         "coatOfArms": "A red stallion upon a gold shield, on a brown field",
         "words": "",
-        "titles": [
-            ""
-        ],
-        "seats": [
-            "Stone Hedge"
-        ]
+        "titles": "",
+        "seats": "Stone Hedge"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/60",
@@ -79,13 +50,8 @@
         "region": "The Stormlands",
         "coatOfArms": "A field of black nightingales on yellow",
         "words": "No Song so Sweet",
-        "titles": [
-            "Lord of the Marches",
-            "Lord of Nightsong"
-        ],
-        "seats": [
-            "Nightsong"
-        ]
+        "titles": "Lord of Nightsong",
+        "seats": "Nightsong"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/65",
@@ -93,12 +59,8 @@
         "region": "The Crownlands",
         "coatOfArms": "Argent, semy of crabs gules",
         "words": "",
-        "titles": [
-            "Lord of Claw Isle"
-        ],
-        "seats": [
-            "Claw Isle"
-        ]
+        "titles": "Lord of Claw Isle",
+        "seats": "Claw Isle"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/72",
@@ -106,12 +68,8 @@
         "region": "The Westerlands",
         "coatOfArms": "Three dogs on a yellow field",
         "words": "",
-        "titles": [
-            "Ser"
-        ],
-        "seats": [
-            "Clegane's Keep"
-        ]
+        "titles": "Ser",
+        "seats": "Clegane's Keep"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/81",
@@ -119,13 +77,8 @@
         "region": "",
         "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field",
         "words": "",
-        "titles": [
-            "Lord of Heart's Home",
-            "King of the Fingers (historical)"
-        ],
-        "seats": [
-            "Heart's Home"
-        ]
+        "titles": "Lord of Heart's Home",
+        "seats": "Heart's Home"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/97",
@@ -133,12 +86,8 @@
         "region": "The Riverlands",
         "coatOfArms": "A black plowman on a brown field",
         "words": "",
-        "titles": [
-            ""
-        ],
-        "seats": [
-            "Darry"
-        ]
+        "titles": "",
+        "seats": "Darry"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/99",
@@ -146,13 +95,8 @@
         "region": "Dorne",
         "coatOfArms": "A white sword and falling star crossed on lilac",
         "words": "",
-        "titles": [
-            "Lord of Starfall",
-            "King of the Torrentine (historical)"
-        ],
-        "seats": [
-            "Starfall"
-        ]
+        "titles": "Lord of Starfall",
+        "seats": "Starfall"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/102",
@@ -160,12 +104,8 @@
         "region": "The Stormlands",
         "coatOfArms": "A forked purple lightning bolt, on black field speckled with four-pointed stars",
         "words": "",
-        "titles": [
-            "Lord of Blackhaven"
-        ],
-        "seats": [
-            "Blackhaven"
-        ]
+        "titles": "Lord of Blackhaven",
+        "seats": "Blackhaven"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/106",
@@ -173,14 +113,8 @@
         "region": "Iron Islands",
         "coatOfArms": "Gules, a bone hand argent",
         "words": "",
-        "titles": [
-            "Lord of Old Wyk",
-            "The Drumm",
-            "The Bone Hand"
-        ],
-        "seats": [
-            ""
-        ]
+        "titles": "Lord of Old Wyk",
+        "seats": ""
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/120",
@@ -188,12 +122,8 @@
         "region": "The Westerlands",
         "coatOfArms": "Three silver ships on a blue field with a border of crimson and gold",
         "words": "",
-        "titles": [
-            "Lord of Fair Isle"
-        ],
-        "seats": [
-            "Faircastle, Fair Isle"
-        ]
+        "titles": "Lord of Fair Isle",
+        "seats": "Faircastle, Fair Isle"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/143",
@@ -201,12 +131,8 @@
         "region": "The Riverlands",
         "coatOfArms": "Two blue towers, united by a bridge, on a silver-grey field",
         "words": "",
-        "titles": [
-            "Lord of the Crossing"
-        ],
-        "seats": [
-            "The Twins"
-        ]
+        "titles": "Lord of the Crossing",
+        "seats": "The Twins"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/150",
@@ -214,12 +140,8 @@
         "region": "The North",
         "coatOfArms": "Gules, a gauntlet argent",
         "words": "",
-        "titles": [
-            "Master of Deepwood Motte"
-        ],
-        "seats": [
-            "Deepwood Motte"
-        ]
+        "titles": "Master of Deepwood Motte",
+        "seats": "Deepwood Motte"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/160",
@@ -227,12 +149,8 @@
         "region": "The Vale",
         "coatOfArms": "A yellow tower, burning, on a black pile, on a flame-red field",
         "words": "",
-        "titles": [
-            "Lord of Gulltown"
-        ],
-        "seats": [
-            "Gulltown"
-        ]
+        "titles": "Lord of Gulltown",
+        "seats": "Gulltown"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/169",
@@ -240,14 +158,8 @@
         "region": "Iron Islands",
         "coatOfArms": "Sable, a kraken Or",
         "words": "We Do Not Sow",
-        "titles": [
-            "King of Salt and Rock",
-            "Son of the Sea Wind",
-            "Lord Reaper of Pyke"
-        ],
-        "seats": [
-            "Pyke"
-        ]
+        "titles": "King of Salt and Rock",
+        "seats": "Pyke"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/177",
@@ -255,13 +167,8 @@
         "region": "Iron Islands",
         "coatOfArms": "Quartered: a silver scythe on black, a peacock on cream",
         "words": "",
-        "titles": [
-            "Knight of Grey Garden",
-            "Lord of Greyshield"
-        ],
-        "seats": [
-            "Grey Garden, Harlaw"
-        ]
+        "titles": "Knight of Grey Garden",
+        "seats": "Grey Garden, Harlaw"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/195",
@@ -269,17 +176,8 @@
         "region": "The Reach",
         "coatOfArms": "Cendrée, a tower argent with a beacon on fire gules",
         "words": "We Light the Way",
-        "titles": [
-            "Lord of the Hightower",
-            "Lord of the Port",
-            "Voice of Oldtown",
-            "Defender of the Citadel",
-            "Beacon of the South",
-            "King of the High Tower (formerly)"
-        ],
-        "seats": [
-            "The Hightower, Oldtown"
-        ]
+        "titles": "Lord of the Hightower",
+        "seats": "The Hightower, Oldtown"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/215",
@@ -287,12 +185,8 @@
         "region": "The North",
         "coatOfArms": "Sable, a sunburst argent",
         "words": "The Sun of Winter",
-        "titles": [
-            "Lord of Karhold"
-        ],
-        "seats": [
-            "Karhold"
-        ]
+        "titles": "Lord of Karhold",
+        "seats": "Karhold"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/229",
@@ -300,14 +194,8 @@
         "region": "The Westerlands",
         "coatOfArms": "A gold lion, on a crimson field",
         "words": "Hear Me Roar!",
-        "titles": [
-            "King of the Rock (formerly) Lord of Casterly Rock",
-            "Shield of Lannisport",
-            "Warden of the West"
-        ],
-        "seats": [
-            "Casterly Rock"
-        ]
+        "titles": "King of the Rock (formerly) Lord of Casterly Rock",
+        "seats": "Casterly Rock"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/254",
@@ -315,12 +203,8 @@
         "region": "The Riverlands",
         "coatOfArms": "A silver eagle, displayed, on an indigo field",
         "words": "Above the Rest",
-        "titles": [
-            "Lord of Seagard"
-        ],
-        "seats": [
-            "Seagard"
-        ]
+        "titles": "Lord of Seagard",
+        "seats": "Seagard"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/255",
@@ -328,19 +212,8 @@
         "region": "The North",
         "coatOfArms": "A white merman with dark green hair, beard and tail, carrying a black trident, on a blue-green field",
         "words": "",
-        "titles": [
-            "Lord of White Harbor",
-            "Warden of the White Knife",
-            "Shield of the Faith",
-            "Defender of the Dispossessed",
-            "Lord Marshal of the Mander",
-            "Knight of the Order of the Green Hand",
-            "Lord of Dunstonbury (formerly)"
-        ],
-        "seats": [
-            "New Castle in White Harbor",
-            "Dunstonbury (formerly)"
-        ]
+        "titles": "Lord of White Harbor",
+        "seats": "New Castle in White Harbor"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/258",
@@ -348,12 +221,8 @@
         "region": "The Westerlands",
         "coatOfArms": "An orange burning tree, on a smoky field",
         "words": "Burning bright",
-        "titles": [
-            ""
-        ],
-        "seats": [
-            "Ashemark"
-        ]
+        "titles": "",
+        "seats": "Ashemark"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/285",
@@ -361,14 +230,8 @@
         "region": "Dorne",
         "coatOfArms": "Tenny, a sun in splendour gules transfixed by a spear bendwise Or",
         "words": "Unbowed, Unbent, Unbroken",
-        "titles": [
-            "Lord of the Sandship",
-            "Lord of Sunspear",
-            "Prince of Dorne"
-        ],
-        "seats": [
-            "Old Palace within Sunspear"
-        ]
+        "titles": "Lord of Sunspear",
+        "seats": "Old Palace within Sunspear"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/271",
@@ -376,12 +239,8 @@
         "region": "The North",
         "coatOfArms": "A wood vert, a bear sable",
         "words": "Here We Stand",
-        "titles": [
-            "Lord of Bear Island"
-        ],
-        "seats": [
-            "Bear Island"
-        ]
+        "titles": "Lord of Bear Island",
+        "seats": "Bear Island"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/317",
@@ -389,13 +248,8 @@
         "region": "The Reach",
         "coatOfArms": "Azure, a grape cluster proper",
         "words": "",
-        "titles": [
-            "Lord of the Arbor",
-            "King of the Arbor (formerly)"
-        ],
-        "seats": [
-            "The Arbor"
-        ]
+        "titles": "Lord of the Arbor",
+        "seats": "The Arbor"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/318",
@@ -403,12 +257,8 @@
         "region": "The Neck",
         "coatOfArms": "Vert, a lizard-lion sable",
         "words": "",
-        "titles": [
-            ""
-        ],
-        "seats": [
-            "Greywater Watch"
-        ]
+        "titles": "",
+        "seats": "Greywater Watch"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/319",
@@ -416,12 +266,8 @@
         "region": "The Westerlands",
         "coatOfArms": "A red lion rampant regardant with a forked tail, with gold teeth and claws, on a silver field",
         "words": "",
-        "titles": [
-            "Lord of Castamere"
-        ],
-        "seats": [
-            "Castamere"
-        ]
+        "titles": "Lord of Castamere",
+        "seats": "Castamere"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/326",
@@ -429,12 +275,8 @@
         "region": "The Reach",
         "coatOfArms": "Argent, a tree eradicated",
         "words": "",
-        "titles": [
-            "Lord of Goldengrove and Marshall of the Northmarch"
-        ],
-        "seats": [
-            "Goldengrove"
-        ]
+        "titles": "Lord of Goldengrove and Marshall of the Northmarch",
+        "seats": "Goldengrove"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/328",
@@ -442,13 +284,8 @@
         "region": "The Vale",
         "coatOfArms": "Black iron studs on a bronze field, bordered with runes",
         "words": "We Remember",
-        "titles": [
-            "High King of the Vale, the Fingers and the Mountains of the Moon (formerly)",
-            "Lord of Runestone"
-        ],
-        "seats": [
-            "Runestone"
-        ]
+        "titles": "Lord of Runestone",
+        "seats": "Runestone"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/340",
@@ -456,12 +293,8 @@
         "region": "The Stormlands",
         "coatOfArms": "A black ship on a pale grey field, with a white onion on its sails(Cendrée, a ship sable, its sail charged with an onion argent)",
         "words": "",
-        "titles": [
-            ""
-        ],
-        "seats": [
-            ""
-        ]
+        "titles": "",
+        "seats": ""
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/341",
@@ -469,12 +302,8 @@
         "region": "The Stormlands",
         "coatOfArms": "Three stalks of yellow wheat, on a brown field(Tenné, three stalks of wheat or)",
         "words": "",
-        "titles": [
-            "Lord of Harvest Hall"
-        ],
-        "seats": [
-            "Harvest Hall"
-        ]
+        "titles": "Lord of Harvest Hall",
+        "seats": "Harvest Hall"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/362",
@@ -482,15 +311,8 @@
         "region": "The North",
         "coatOfArms": "A running grey direwolf, on an ice-white field",
         "words": "Winter is Coming",
-        "titles": [
-            "King in the North",
-            "Lord of Winterfell",
-            "Warden of the North",
-            "King of the Trident"
-        ],
-        "seats": [
-            "Scattered (formerly Winterfell)"
-        ]
+        "titles": "King in the North, Lord of Winterfell, Warden of the North",
+        "seats": "Scattered (formerly Winterfell)"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/373",
@@ -498,12 +320,8 @@
         "region": "The Stormlands",
         "coatOfArms": "Battling swans black and white, beaks and feet golden, on per pale white and black field(Per pale argent and sable, two swans combatant counterchanged, beaked and membered or)",
         "words": "",
-        "titles": [
-            "Lord of Stonehelm"
-        ],
-        "seats": [
-            "Stonehelm"
-        ]
+        "titles": "Lord of Stonehelm",
+        "seats": "Stonehelm"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/378",
@@ -511,15 +329,8 @@
         "region": "The Crownlands",
         "coatOfArms": "Sable, a dragon thrice-headed gules",
         "words": "Fire and Blood",
-        "titles": [
-            "King of the Andals, the Rhoynar and the First Men",
-            "Lord of the Seven Kingdoms",
-            "Prince of Summerhall"
-        ],
-        "seats": [
-            "Red Keep (formerly)",
-            "Summerhall (formerly)"
-        ]
+        "titles": "King of the Andals, the Rhoynar and the First Men, Lord of the Seven Kingdoms",
+        "seats": "Red Keep (formerly)"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/379",
@@ -527,12 +338,8 @@
         "region": "The Reach",
         "coatOfArms": "Vert, a huntsman striding to dexter proper garbed gules",
         "words": "First in Battle",
-        "titles": [
-            "Lord of Horn Hill"
-        ],
-        "seats": [
-            "Horn Hill"
-        ]
+        "titles": "Lord of Horn Hill",
+        "seats": "Horn Hill"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/380",
@@ -540,13 +347,8 @@
         "region": "The Stormlands",
         "coatOfArms": "Quartered, yellow sun on a rose-coloured field and white crescents on a blue field(Quarterly, first and fourth, carnation, a sun-in-splendour or, second and third, azure, a moon increscent argent)",
         "words": "",
-        "titles": [
-            "Lord of Tarth",
-            "The Evenstar"
-        ],
-        "seats": [
-            "Evenfall Hall"
-        ]
+        "titles": "The Evenstar",
+        "seats": "Evenfall Hall"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/395",
@@ -554,13 +356,8 @@
         "region": "The Riverlands",
         "coatOfArms": "A leaping silver trout on a field of blue and mud red(Paly wavy azure and gules, a trout embowed argent)",
         "words": "Family, Duty, Honor",
-        "titles": [
-            "Lord of Riverrun",
-            "Lord Paramount of the Trident"
-        ],
-        "seats": [
-            "Scattered (formerly Riverrun)"
-        ]
+        "titles": "Lord of Riverrun, Lord Paramount of the Trident",
+        "seats": "Scattered (formerly Riverrun)"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/398",
@@ -568,17 +365,8 @@
         "region": "The Reach",
         "coatOfArms": "Vert, a rose Or",
         "words": "Growing Strong",
-        "titles": [
-            "Lord of Highgarden",
-            "Defender of the Marches",
-            "High Marshal of the Reach",
-            "Warden of the South",
-            "Lord Paramount of the Mander",
-            "High Steward of Highgarden (pre-Conquest)"
-        ],
-        "seats": [
-            "Highgarden"
-        ]
+        "titles": "Lord of Highgarden, Lord Paramount of the Mander, Defender of the Marches",
+        "seats": "Highgarden"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/405",
@@ -586,12 +374,8 @@
         "region": "The Riverlands",
         "coatOfArms": "Quartered, a black dragon on a white field and two golden eyes in a golden ring on a black field(Quarterly, first and fourth, argent, a dragon sable, second and third, sable, a pair of eyes within an annulet or)",
         "words": "",
-        "titles": [
-            ""
-        ],
-        "seats": [
-            "Wayfarer's Rest"
-        ]
+        "titles": "",
+        "seats": "Wayfarer's Rest"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/407",
@@ -599,12 +383,8 @@
         "region": "The Crownlands",
         "coatOfArms": "seahorse rampant argent, on sea green",
         "words": "The Old, the True, the Brave",
-        "titles": [
-            "Lord of the Tides  Master of Driftmark"
-        ],
-        "seats": [
-            "High Tide or Driftmark"
-        ]
+        "titles": "Lord of the Tides  Master of Driftmark",
+        "seats": "High Tide or Driftmark"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/425",
@@ -612,12 +392,8 @@
         "region": "The Westerlands",
         "coatOfArms": "Six white shells, on a sand-coloured field(Or, six escallops argent)",
         "words": "Honor, Not Honors",
-        "titles": [
-            "Lord of the Crag"
-        ],
-        "seats": [
-            "The Crag"
-        ]
+        "titles": "Lord of the Crag",
+        "seats": "The Crag"
     },
     {
         "url": "https://www.anapioficeandfire.com/api/houses/444",
@@ -625,14 +401,7 @@
         "region": "Dorne",
         "coatOfArms": "Or, a portcullis sable",
         "words": "We Guard the Way",
-        "titles": [
-            "The Bloodroyal",
-            "Lord of Yronwood",
-            "Warden of the Stone Way",
-            "High King of Dorne (formerly)"
-        ],
-        "seats": [
-            "Yronwood"
-        ]
+        "titles": "The Bloodroyal",
+        "seats": "Yronwood"
     }
 ]

@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Houses extends Model { }
+class Houses extends Model {}
 
 Houses.init(
   {
-    url_id: {
+    url: {
       type: DataTypes.STRING,
       allowNull: false,
     },
