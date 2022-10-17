@@ -39,11 +39,19 @@ router.get('/login', (req, res) => {
   res.render('loginPage');
 });
 
-router.get('/search', (req,res)=>{
 
-  res.render('searchByResults', {
-    logged_in: req.session.logged_in
-  })
+router.get('/search', async (req,res)=>{
+//Houses.findall().then =>
+let houseData = await Houses.findAll().catch((err) => {
+  res.json(err);
+});
+const houses = houseData.map((house) => house.get({ plain: true}));
+
+  // res.render('searchByResults', {
+  //   logged_in: req.session.logged_in,
+  //   houses: ['all', { houses }]
+  // })
+  res.render('searchByResults', {houses})
 })
 
 router.get('/saved', withAuth, async (req,res)=>{
@@ -101,5 +109,14 @@ router.get('/charecter/:id', async (req, res) => {
 
 // GET & render saved House
 
+// router.get('/books', (req, res) => {
+//   axios.get("https://www.anapioficeandfire.com/api/books")
+//   .then(response => {
+//       // now we have the data so we jus tog and bring it to the model
+     
+//       console.log(response.data);
+//       res.render('book', {bookData: response.data})
+//   })
+// })
 
 module.exports = router;

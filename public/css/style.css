@@ -55,9 +55,8 @@ header,
 .uk-background-height-1-1 {
   background-image: url(../Images/Cropped-GOT.jpg);
 
-
   /* background-color: #cccccc; */
-  height: 300px;
+  height: 230px;
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +71,7 @@ header,
   margin-right: 10px;
   background-image: linear-gradient(270deg, var(--light) 0%, var(--light) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
+  background-size: 50% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
   border-bottom: solid 5px var(--dark);
@@ -87,7 +86,7 @@ header,
 
 .uk-navbar-container {
   margin-block-start: auto;
-
+  margin-bottom: -10px;
 }
 
 .uk-navbar-nav {
@@ -133,11 +132,6 @@ h4 {
   border-radius: 10px;
 }
 
-.uk-grid>*>:last-child {
-  background-color: var(--medium-dark);
-}
-
-
 /* landingPage.handlebars */
 .landing-card {
   display: flex;
@@ -150,6 +144,10 @@ h4 {
   color: var(--darkest);
   border-color: var(--darkest);
   border-radius: 10px;
+}
+
+#cod-html {
+  text-align:center;
 }
 
 .btn-text {
@@ -181,6 +179,14 @@ h4 {
   border-bottom: 1px solid var(--light);
 }
 
+.uk-width-expand {
+  flex: 1;
+  min-width: 1px;
+  text-align: center;
+}
+p {
+background-color: var(--medium);
+}
 /* searchByResults */
 .character-search {
   display: flex;
@@ -210,6 +216,17 @@ h4 {
   border-bottom: calc(0.2px + 0.05em) solid var(--dark);
 }
 
+.uk-margin-large {
+  margin-bottom: 40px;
+  background-color: var(--medium-dark);
+}
+
+::selection {
+  background: var(--medium);
+  color: #fff;
+  text-shadow: none;
+}
+
 /* login/logout */
 [class*='col-'] {
   position: relative;
@@ -217,4 +234,13 @@ h4 {
   padding-right: 15px;
   padding-left: 15px;
   background-color: var(--medium-dark);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 25px;
 }
