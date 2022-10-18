@@ -39,4 +39,27 @@ router.get('/saved', withAuth, async (req,res)=>{
   })
 })
 
+router.get('/charecter/:id', async (req, res) => {
+  try {
+    const savedCharacterData = await SavedCharacters.findByPk(req.params.id, {
+      include: [
+        {
+          // Change
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const character = savedCharacterData.get({ plain: true });
+
+    res.render('searchByResults', {
+      ...character,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
