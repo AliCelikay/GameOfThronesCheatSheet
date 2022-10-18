@@ -6,7 +6,6 @@ description and a button that opens a model with more info inside --}}
     <h3 class="uk-heading-bullet">Saved Characters</h3>
 
     <ul id="save-characters">
-      {{!-- {{#if SavedCharacters.length}} --}}
       {{#each savedCharacters as |char|}}
       <li>
         <div class="uk-card uk-card-default uk-width-1-2@m">
@@ -22,18 +21,8 @@ description and a button that opens a model with more info inside --}}
             </div>
           </div>
         </div>
-
       </li>
-
       {{/each}}
-      {{!-- {{/if}} --}}
-
-
-    <ul id="save-charecters">
-      {{!-- dummy info --}}
-      <li>Character 1</li>
-    
-    </ul>
   </div>
 
   <div>
@@ -48,4 +37,4 @@ description and a button that opens a model with more info inside --}}
 
 
 <script src="/js/favorites.js"></script>
-{{!-- <script src="/js/saveCharacters"></script> --}}
+<script src="/js/saveCharacters"></script>
