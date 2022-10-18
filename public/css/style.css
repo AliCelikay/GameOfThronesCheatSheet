@@ -32,7 +32,7 @@ header,
 
 .uk-background-height-1-1 {
   background-image: url(../Images/GOT-Header.jpg);
-  height: 230px;
+  height: 240px;
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,17 +77,13 @@ header,
 
 }
 
-h1 {
-  margin-block-start: auto;
-  color: var(--dark);
-}
-
 a {
   color: var(--dark);
 }
 
 h1 {
   color: var(--light);
+  margin-top: 100px;
 }
 
 h2 {
@@ -129,9 +125,21 @@ h5 {
   border-color: var(--darkest);
   border-radius: 10px;
 }
+.uk-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--dark);
+}
+
+.uk-grid>* {
+  padding-left: 0px;
+}
 
 img {
-    background-image: url(../Images/map.jpeg);
+    /* background-image: url(../Images/map.jpeg); */
     background-repeat: no-repeat;
     box-sizing: border-box;
     justify-content: center;
@@ -218,6 +226,7 @@ p {
   color: var(--light);
   padding-bottom: calc(5px + 0.1em);
   border-bottom: calc(0.2px + 0.05em) solid var(--light);
+  text-align: center;
 }
 
 /* login/logout */
@@ -249,3 +258,7 @@ p {
 #character-html {
   text-align: center;
 }
+
+
+   
+    

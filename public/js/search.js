@@ -77,7 +77,7 @@ function houseMatch(houseId) {
             <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-expand">
-            <h1>Name: ${response.name}</h2>
+            <h2>Name: ${response.name}</h2>
             <h2>Region: ${response.region}</h2>
             <h2>Coat of Arms: ${response.coatOfArms}</h2>
             <h2>Words: ${response.words}</h2>
