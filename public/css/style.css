@@ -32,9 +32,9 @@ header,
 
 .uk-background-height-1-1 {
   background-image: url(../Images/GOT-Header.jpg);
-  height: 240px;
+  height: 300px;
   width: auto;
-  background-position: center;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -77,13 +77,18 @@ header,
 
 }
 
-a {
-  color: var(--dark);
+.uk-navbar {
+  display: inline;
+  position: static;
+  height: 311px;
 }
 
-h1 {
-  color: var(--light);
-  margin-top: 100px;
+.uk-nav, .uk-nav ul {
+  margin: -5px;
+}
+
+a {
+  color: var(--dark);
 }
 
 h2 {
@@ -110,6 +115,20 @@ h5 {
   background-color: var(--medium);
   color: #3C2B1D;
   border-radius: 10px;
+}
+
+.uk-card-default .uk-card-header {
+  border-bottom: 1px solid var(--medium);
+}
+
+uk-button-default {
+  color: var(--light);
+  border: 1px solid var(--medium);
+}
+
+.uk-button-default {
+  color: var(--light);
+  border: 1px solid var(--medium);
 }
 
 /* landingPage.handlebars */
@@ -139,7 +158,6 @@ h5 {
 }
 
 img {
-    /* background-image: url(../Images/map.jpeg); */
     background-repeat: no-repeat;
     box-sizing: border-box;
     justify-content: center;
@@ -155,7 +173,7 @@ img {
 }
 
 .btn-text {
-  color: var(--darkest);
+  color: var(--light);
 }
 
 .uk-card {
@@ -258,7 +276,6 @@ p {
 #character-html {
   text-align: center;
 }
-
 
    
     
