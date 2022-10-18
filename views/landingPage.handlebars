@@ -5,33 +5,30 @@
 {{!-- Heading --}}
 <h2 class="uk-heading-line uk-text-center"><span>Welcome to the Game of Thrones Cheat Sheet!</span></h2>
 
-{{!-- this is a card that divides horizontally in half and on top displays demo gif of our searches, and on the bottom it prints an About Us section --}}
-<div class="uk-child-width-1-2@m landing-card" uk-grid>
+{{!-- this is a card that divides horizontally in half and on top displays demo gif of our searches, and on the bottom
+it prints an About Us section --}}
+<div class="uk-child-width-1-.5@m landing-card" uk-grid>
   <div>
+    <div class="uk-card-body">
+      <h3 class="uk-heading-divider uk-card-title">About Us</h3>
+      <p> Are you watching Game of Thrones or House of the Dragon with your spouse for the first time and have no idea what in the seven hells is going on? The Game of Thrones Cheat Sheet is here to help. Use our database to discover all the secrets of Westeros and beyond: the compelling characters and the ancient houses they belong to. Save your favorite characters for future reference so you never forget who to root for and start plotting out your own fan fiction to make the world your own.
+      </p>
+    </div>
+    <div id="cod-html"> </div>
     <div class="uk-card uk-card-default uk-card-body">
-      <div class="uk-card-media-top">
-        <img src="06-server-side-apis-homework-demo.png" width="1800" height="1200" alt="">
-      </div>
-      <div class="uk-card-body">
-        <h3 class="uk-card-title">About Us</h3>
-        <p> Struggling to keep everyone in Game of Thrones intact? We have a easy to use cheat sheet for
-          you! You
-          can find any character information in the show using their name or alias. You can search by
-          house and
-          book as well to pull information. If you have an account you are able to save your favorite
-          characters
-          and houses for easy access later on.
-        </p>
-      </div>
-      <div class="uk-align-center" id="cod-html">
+      <div class="uk-card-media-bottom">
+        <img>
+        <img src="https://i.pinimg.com/564x/6c/24/13/6c2413df1a2b410654984550b3062149.jpg" width="1800" height="1000"
+          alt=""></img>
       </div>
     </div>
   </div>
 </div>
 {{!-- button that leads user to the login/sign up site --}}
 <div align="center">
-  <button class="uk-button uk-button-large landing-submit-btn"> <a href="/login" class="btn-text">Click here to register and
-    unlock the world of Game of Thrones</a></button>
+  <button class="uk-button uk-button-large landing-submit-btn"> <a href="/login" class="btn-text">Click here to register
+      and
+      unlock the world of Game of Thrones</a></button>
 </div>
 {{!-- {{/each}} --}}
 <script src="/js/cod.js"></script>

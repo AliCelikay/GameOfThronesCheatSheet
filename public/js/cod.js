@@ -8,7 +8,7 @@ var charOfDay = function () {
                     let codHtml = `
                     <h3 class="uk-heading-divider uk-card-title
                     ">Character of the Day</h1>
-                    <div class="uk-card uk-card-default uk-width-1-2@m">
+                    <div class="uk-card uk-card-default uk-width-1-.5@m">
                     <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
