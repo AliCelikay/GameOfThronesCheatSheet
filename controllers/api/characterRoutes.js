@@ -21,24 +21,26 @@ router.get('/', async(req,res)=>{
 // route to save a Character
 router.post('/', async (req, res) => {
   if (!req.session.logged_in) {
-    res.status(400).json("Must be logged in to add character")
+    res.status(400).json("Must be logged in to add character");
+    return;
+  } else {
+    console.log('new character attemting to add to db') //see this on backend terminal
+    console.log('req.body', req.body)
+  
+      try {
+        const characterData = await Character.create({
+          name: req.body.name,
+          culture: req.body.culture,
+          aliases: req.body.aliases,
+          title: req.body.title,
+          house: req.body.house,
+          user_id: req.session.user_id
+        });
+        res.status(200).json(characterData);
+      } catch (err) {
+        res.status(400).json(err);
+      }
   }
-  console.log('new character attemting to add to db') //see this on backend terminal
-  console.log('req.body', req.body)
-
-    try {
-      const characterData = await Character.create({
-        name: req.body.name,
-        culture: req.body.culture,
-        aliases: req.body.aliases,
-        title: req.body.title,
-        house: req.body.house,
-        user_id: req.session.user_id
-      });
-      res.status(200).json(characterData);
-    } catch (err) {
-      res.status(400).json(err);
-    }
 });
 
 module.exports = router;
