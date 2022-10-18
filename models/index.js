@@ -1,13 +1,28 @@
 const User = require('./User');
-const Project = require('./SavedCharecters');
+const Character = require('./SavedCharacters');
+const Houses = require('./Houses');
+// const Comment = require('./Comment')
 
-User.hasMany(Project, {
+// A user can save many characters
+User.hasMany(Character, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
+// a saved character belongs to 1 user
+Character.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Project };
+// A user can save many houses
+User.hasMany(Houses, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
+});
+
+// A saved house belongs to 1 user
+Houses.belongsTo(User, {
+  foreignKey: 'user_id'
+});
+
+module.exports = { User, Character, Houses };

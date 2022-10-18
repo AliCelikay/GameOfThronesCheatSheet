@@ -1,54 +1,55 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class SavedCharacters extends Model { }
+class Houses extends Model {}
 
-SavedCharacters.init(
+Houses.init(
   {
-    url_id: {
+    url: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    culture: {
+    region: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    coatOfArms: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    mother: {
+    words: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    father: {
+    titles: {
       type: DataTypes.STRING,
+      // defaultValue: [],
       allowNull: true,
     },
-    aliases: {
+    seats: {
       type: DataTypes.STRING,
+      // defaultValue: [],
       allowNull: true,
     },
-    title: {
-      type: DataTypes.STRING,
-      // Ask instructors for array help
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
-    allegiances: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    spouse: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'savedCharacters',
+    modelName: 'houses',
   }
 );
 
-module.exports = SavedCharacters;
+module.exports = Houses;

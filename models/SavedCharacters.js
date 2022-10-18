@@ -5,53 +5,33 @@ class SavedCharacters extends Model { }
 
 SavedCharacters.init(
   {
-    url_id: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
     culture: {
       type: DataTypes.STRING,
-      allowNull: true,
-    },
-    mother: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    father: {
-      type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     aliases: {
       type: DataTypes.STRING,
-      allowNull: true,
+      // defaultValue: [],
+      allowNull: false,
     },
     title: {
       type: DataTypes.STRING,
-      // Ask instructors for array help
+      allowNull: false,
     },
-    allegiances: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    spouse: {
+    house: {
       type: DataTypes.STRING,
       allowNull: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       references: {
         model: 'user',
         key: 'id',
       },
-    },
-    user_notes: {
-      type: DataTypes.STRING,
-      allowNull: true,
     },
   },
   {

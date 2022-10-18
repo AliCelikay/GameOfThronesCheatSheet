@@ -1,10 +1,35 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
+const axios = require('axios');
 
+router.get('/', async (req, res) => {
+    try {
+      // Get all projects and JOIN with user data
+      const savedCharData = await SavedCharacters.findAll({
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+      
+      // Serialize data so the template can read it
+      const savedChars = savedCharData.map((savedChar) => savedChar.get({ plain: true }));
+  
+      // Pass serialized data and session flag into template
+      res.render('savedFeatures', { 
+        savedChars, 
+        logged_in: req.session.logged_in 
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
 // POST a new note
-router.post('/', withAuth, async (req, res) => {
+router.post('/saved', withAuth, async (req, res) => {
     try
     {
         const commentData = await Comment.create({
@@ -36,3 +61,5 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;

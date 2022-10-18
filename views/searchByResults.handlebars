@@ -1,12 +1,54 @@
 {{!-- This part is minimum, it will act as a main file that will store all of the partials information. --}}
 <h2 class="uk-heading-line uk-text-center"><span> Returned Raven</span></h2>
 
-<select name="" id="book-select">
-    <option value=""></option>
-</select>
-<div id="root">
-    
+
+<div class=" uk-card-default">
+<form class="uk-form-horizontal uk-margin-large">
+
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-horizontal-select">Select Book</label>
+    <div class="uk-form-controls">
+      <select class="uk-select" name="" id="book-select">
+        <option value=""></option>
+      </select>
+    </div>
+  </div>
+
+   <div class="uk-margin">
+    <label class="uk-form-label" for="form-horizontal-select">Select a House</label>
+    <div class="uk-form-controls">
+      <select class="uk-select" name="" id="house-select">
+        {{#each houses as |house|}}
+        <option placeholder="" value={{house.id}}>{{house.name}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <div class="uk-margin">
+    {{!-- Search Character --}}
+    <label class="uk-form-label" for="form-horizontal-text">Search Character</label>
+    <div class="uk-form-controls character-search">
+      <input class="uk-input" id="character-search-el" type="text" placeholder="Ex: Jon Snow">
+      {{!-- <button class="uk-button uk-button-default" id="submit-btn-el">Search</button> --}}
+      <button class="uk-button uk-button-default" id="submit-btn-el">Search</button>
+    </div>
+  </div>
+</form>
+
+{{!-- display selected character --}}
+<div id="character-html" >
 </div>
 
+{{!-- display selected house --}}
+<div id="display-house">
+</div>
+
+{{!-- display selected book --}}
+<div id="display-book">
+</div>
+
+
 <script src="/js/search.js"></script>
+<script src="/js/saveCharacters.js"></script>
 <script src="/js/script.js"></script>
