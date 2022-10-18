@@ -241,10 +241,13 @@ p {
 }
 
 .uk-heading-divider {
-  color: var(--light);
+  color: var(--dark);
   padding-bottom: calc(5px + 0.1em);
   border-bottom: calc(0.2px + 0.05em) solid var(--light);
   text-align: center;
+  background-color: var(--light);
+  border-radius: 30px;
+  margin-left: 70px;
 }
 
 /* login/logout */

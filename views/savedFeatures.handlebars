@@ -1,12 +1,8 @@
-{{!-- This rough draft html template will be split in half with the top being saved charecters and the bottom half being
-saved houses. We will be storing charecter and house info using a table from uikit. Inside table will be a short
-description and a button that opens a model with more info inside --}}
 <div align="center">
   <div>
     <h3 class="uk-heading-divider uk-card-title">Saved Characters</h3>
 
     <ul id="save-characters">
-      {{!-- {{#if SavedCharacters.length}} --}}
       {{#each savedCharacters as |char|}}
       <ul>
         <div class="uk-card uk-card-default uk-width-1-2@m">
@@ -26,7 +22,4 @@ description and a button that opens a model with more info inside --}}
       </ul>
 
       {{/each}}
-
-
-<script src="/js/favorites.js"></script>
 

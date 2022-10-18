@@ -1,11 +1,10 @@
 const router = require('express').Router();
 const { Houses } = require('../../models');
 
-
+// /api/houses
 router.get('/:id', (req, res) => {
-Houses.findByPk(req.params.id)
+    Houses.findByPk(req.params.id)
         .then(response => {
-            // now we have the data so we jus tog and bring it to the model
             console.log(response);
             res.json(response)
         })

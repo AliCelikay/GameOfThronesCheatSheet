@@ -20,7 +20,6 @@ async function saveCharacterHandler(event) {
   
     if (response.ok) {
       console.log(response)
-      // document.location.replace('/saved');
     } else {
       alert('Failed to add character');
     }
