@@ -2,11 +2,9 @@ const router = require('express').Router();
 const { Houses, savedHouses } = require('../../models');
 
 // /api/houses
-
 router.get('/:id', (req, res) => {
     Houses.findByPk(req.params.id)
         .then(response => {
-            // now we have the data so we jus tog and bring it to the model
             console.log(response);
             res.json(response)
         })
@@ -26,12 +24,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     if (!req.session.logged_in) {
         res.status(400).json("Must be logged in to add house")
-        // res.json("Must be logged in to add house")
-        // res.redirect('/login');
     }
-    console.log('new house attemting to add to db') //see this on backend terminal
-    console.log('req.body', req.body)
-
     try {
         const houseData = await savedHouses.create({
             name: req.body.name,

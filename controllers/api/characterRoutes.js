@@ -2,7 +2,6 @@ const router = require('express').Router();
 const axios = require('axios');
 const Character = require('../../models/SavedCharacters')
 
-// /api/characters
 router.get('/:character', (req, res) => {
     let apiUrl = `https://www.anapioficeandfire.com/api/characters/?name=${req.params.character}`
     axios.get(apiUrl)
@@ -23,8 +22,6 @@ router.get('/', async(req,res)=>{
 router.post('/', async (req, res) => {
   if (!req.session.logged_in) {
     res.status(400).json("Must be logged in to add character")
-    // res.json("Must be logged in to add character")
-    // res.redirect('/login');
   }
   console.log('new character attemting to add to db') //see this on backend terminal
   console.log('req.body', req.body)
