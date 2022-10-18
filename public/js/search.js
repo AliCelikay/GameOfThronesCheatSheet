@@ -77,7 +77,7 @@ function houseMatch(houseId) {
             <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-expand">
-            <h1>Name: ${response.name}</h2>
+            <h2>Name: ${response.name}</h2>
             <h2>Region: ${response.region}</h2>
             <h2>Coat of Arms: ${response.coatOfArms}</h2>
             <h2>Words: ${response.words}</h2>
@@ -120,12 +120,12 @@ var searchCharacterFunction = function (characterInput) {
                     //investigate the response to find the bits of data you definitely want
                     // use a template literal to be passed as html to the root
                     let characterHtml = `
-                    <h1 class="uk-heading-divider">Searched Character</h1>
+                    <h1 class="uk-heading-divider uk-card-title">Searched Character</h1>
                     <div class="uk-card uk-card-default uk-width-1-2@m">
                     <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
-                    <h1 id="char-name" value="${response[0].name}">Name: ${response[0].name}</h1>
+                    <h2 id="char-name" value="${response[0].name}">Name: ${response[0].name}</h2>
                     <h2 id="char-culture" value="${response[0].culture}">Culture: ${response[0].culture}</h2>
                     <h2 id="char-aliases" value="${response[0].aliases}">Aliases: ${response[0].aliases}</h2>
                     <h2 id="char-title" value= "${response[0].titles}">Title: ${response[0].titles}</h2>

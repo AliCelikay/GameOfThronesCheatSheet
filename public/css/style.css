@@ -28,37 +28,13 @@ header,
   border-bottom: calc(0.2px + 0.05em) solid var(--dark);
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
-}
-
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}
-
-
 /* main.handlebars */
 
 .uk-background-height-1-1 {
-  background-image: url(../Images/Cropped-GOT.jpg);
-
-  /* background-color: #cccccc; */
-  height: 230px;
+  background-image: url(../Images/GOT-Header.jpg);
+  height: 300px;
   width: auto;
-  background-position: center;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -66,17 +42,19 @@ header,
 
 .uk-navbar-nav>li>a {
   text-decoration: none;
+  text-align: center;
   padding: 5px 10px;
-  color: var(--light);
-  margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--light) 0%, var(--light) 100%);
+  margin-right: -8px;
+  margin-top: 0px;
+  margin-right: -2px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  background-image: linear-gradient(197deg, var(--light) 0%, var(--light) 50%);
   background-repeat: no-repeat;
   background-size: 50% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  border-bottom: solid 5px var(--dark);
 }
-
 
 .uk-navbar-nav>li>a:hover {
   background-size: 100% 100%;
@@ -99,37 +77,58 @@ header,
 
 }
 
-h1 {
-  margin-block-start: auto;
-  color: var(--dark);
+.uk-navbar {
+  display: inline;
+  position: static;
+  height: 311px;
+}
+
+.uk-nav, .uk-nav ul {
+  margin: -5px;
 }
 
 a {
   color: var(--dark);
 }
 
-h1 {
-  color: var(--light);
-}
-
 h2 {
   font-size: 2rem;
-  background-color: var(--medium);
+  background-color: var(--light);
   text-align: CENTER;
   border-radius: 10px;
 }
 
 h4 {
   font-size: 2rem;
-  background-color: var(--medium);
+  background-color: var(--light);
   text-align: CENTER;
   border-radius: 10px;
+}
+
+h5 {
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+  color: var(--light);
 }
 
 .btn.btn-primary {
   background-color: var(--medium);
   color: #3C2B1D;
   border-radius: 10px;
+}
+
+.uk-card-default .uk-card-header {
+  border-bottom: 1px solid var(--medium);
+}
+
+uk-button-default {
+  color: var(--light);
+  border: 1px solid var(--medium);
+}
+
+.uk-button-default {
+  color: var(--light);
+  border: 1px solid var(--medium);
 }
 
 /* landingPage.handlebars */
@@ -145,19 +144,36 @@ h4 {
   border-color: var(--darkest);
   border-radius: 10px;
 }
+.uk-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--dark);
+}
+
+.uk-grid>* {
+  padding-left: 0px;
+}
+
+img {
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    justify-content: center;
+    height: auto;
+    background-position: relative;
+    background-position: center;
+    background-size: contain;
+}
 
 #cod-html {
-  text-align:center;
+  text-align: center;
+  justify-content: center;
 }
 
 .btn-text {
-  color: var(--darkest);
-}
-
-.uk-card-default {
-  background-color: var(--light);
   color: var(--light);
-  box-shadow: 0 5px 15px var(--dark);
 }
 
 .uk-card {
@@ -171,12 +187,9 @@ h4 {
   border-radius: 10px;
 }
 
-.uk-card-default :hover {
-  background-color: var(--medium);
-}
-
 .uk-card-default .uk-card-header {
-  border-bottom: 1px solid var(--light);
+  background-color: var(--medium);
+  color: var(--light);
 }
 
 .uk-width-expand {
@@ -184,9 +197,11 @@ h4 {
   min-width: 1px;
   text-align: center;
 }
+
 p {
-background-color: var(--medium);
+  background-color: var(--medium);
 }
+
 /* searchByResults */
 .character-search {
   display: flex;
@@ -200,6 +215,10 @@ background-color: var(--medium);
 .uk-card-default {
   background-color: var(--medium-dark);
   padding: 30px;
+  text-align: center;
+  color: var(--light);
+  box-shadow: 0 5px 15px var(--dark);
+  width: auto;
 }
 
 .uk-margin {
@@ -208,12 +227,6 @@ background-color: var(--medium);
 
 .uk-form-label {
   background-color: var(--light);
-}
-
-.uk-heading-divider {
-  color: var(--dark);
-  padding-bottom: calc(5px + 0.1em);
-  border-bottom: calc(0.2px + 0.05em) solid var(--dark);
 }
 
 .uk-margin-large {
@@ -225,6 +238,13 @@ background-color: var(--medium);
   background: var(--medium);
   color: #fff;
   text-shadow: none;
+}
+
+.uk-heading-divider {
+  color: var(--light);
+  padding-bottom: calc(5px + 0.1em);
+  border-bottom: calc(0.2px + 0.05em) solid var(--light);
+  text-align: center;
 }
 
 /* login/logout */
@@ -244,3 +264,18 @@ background-color: var(--medium);
   margin-right: -15px;
   padding-top: 25px;
 }
+
+#display-house {
+  text-align: center;
+}
+
+#display-book {
+  text-align: center;
+}
+
+#character-html {
+  text-align: center;
+}
+
+   
+    

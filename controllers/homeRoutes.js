@@ -71,35 +71,6 @@ router.get('/saved', withAuth, async (req,res)=>{
   })
 })
 
-<<<<<<< HEAD
-
-// router.get('/savedcharacter', async (req, res) => {
-//   try {
-//     // Get all projects and JOIN with user data
-//     const savedCharacterData = await SavedCharacters.findAll({
-//       include: [
-//         {
-//           // Change
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-
-//     // Serialize data so the template can read it
-//     const characters = savedCharacterData.map((character) => character.get({ plain: true }));
-
-//     // Pass serialized data and session flag into template
-//     res.render('searchByResults', { 
-//       characters, 
-//       logged_in: req.session.logged_in 
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-=======
->>>>>>> f16d3ec1e039e0623c44a88a0edb65854490f1eb
 
 
 //GET House by id 

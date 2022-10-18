@@ -1229,7 +1229,7 @@ form [type='radio'] {
 }
 
 .align-center {
-  align-items: center;
+  align-items: end;
 }
 
 .align-content-start {
