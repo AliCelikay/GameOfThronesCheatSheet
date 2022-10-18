@@ -61,17 +61,16 @@ function houseMatch(houseId) {
             <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-expand">
-            <h1 id="house-name" value="${response.name}">Name: ${response.name}</h2>
-            <h2 id="house-region" value="${response.region}">Region: ${response.region}</h2>
-            <h2 id="house-coatOfArms" value="${response.coatOfArms}">Coat of Arms: ${response.coatOfArms}</h2>
-            <h2 id="house-words" value="${response.words}">Words: ${response.words}</h2>
-            <h2 id="house-titles" value="${response.titles}">Titles: ${response.titles}</h2>
-            <h2 id="house-seats" value="${response.seats}">Seats: ${response.seats}</h2>
+            <h2>Name: ${response.name}</h2>
+            <h2>Region: ${response.region}</h2>
+            <h2>Coat of Arms: ${response.coatOfArms}</h2>
+            <h2>Words: ${response.words}</h2>
+            <h2>Titles: ${response.titles}</h2>
+            <h2>Seats: ${response.seats}</h2>
             </div>
             </div>
             </div>
-            </div>
-            <button id="save-house" class="uk-button uk-button-default">Save House</button>`
+            </div>`
             $('#display-house').html(houseHtml);
         })
 }
@@ -99,12 +98,12 @@ var searchCharacterFunction = function (characterInput) {
                 .then(allegiancesResponse => {
                     console.log(allegiancesResponse);
                     let characterHtml = `
-                    <h1 class="uk-heading-divider">Searched Character</h1>
+                    <h1 class="uk-heading-divider uk-card-title">Searched Character</h1>
                     <div class="uk-card uk-card-default uk-width-1-2@m">
                     <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
-                    <h1 id="char-name" value="${response[0].name}">Name: ${response[0].name}</h1>
+                    <h2 id="char-name" value="${response[0].name}">Name: ${response[0].name}</h2>
                     <h2 id="char-culture" value="${response[0].culture}">Culture: ${response[0].culture}</h2>
                     <h2 id="char-aliases" value="${response[0].aliases}">Aliases: ${response[0].aliases}</h2>
                     <h2 id="char-title" value= "${response[0].titles}">Title: ${response[0].titles}</h2>

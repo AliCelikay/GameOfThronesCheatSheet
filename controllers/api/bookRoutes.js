@@ -13,7 +13,7 @@ router.get('/:bookTitle', (req, res) => {
     let apiUrl = `https://www.anapioficeandfire.com/api/books/?name=${req.params.bookTitle}`
     axios.get(apiUrl)
     .then(response => {
-       res.json(response.data);
+       res.json(response.data)
     });
 })
 
