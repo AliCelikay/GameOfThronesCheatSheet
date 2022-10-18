@@ -1,8 +1,3 @@
-// alert("working")
-// const bookNames = []
-
-// const axios = require('axios');
-
 const bookSelectEl = $('#book-select');
 const houseSelectEl = $('#house-select');
 const characterSearchEl = $('#character-search-el');
@@ -24,16 +19,11 @@ fetch('/api/books')
     });
 
 function bookMatch(bookTitle) {
-    // we need to go and fetch the data about this title
     console.log(bookTitle)
     fetch(`/api/books/${bookTitle}`)
         .then(response => response.json())
         .then(response => {
             console.log(response)
-            // with the response we render stuff on page
-            //investigate the response to find the bits of data you definitely want
-            // use a template literal to be passed as html to the root
-            // We're getting error on line 34, check w/ instructor
             let bookHtml = `<h1 class="uk-heading-divider">Searched Book</h1>
             <div class="uk-card uk-card-default uk-width-1-2@m">
             <div class="uk-card-header">
@@ -48,7 +38,6 @@ function bookMatch(bookTitle) {
             </div>
             </div>
             </div>`
-            // $('#root').text(JSON.stringify(response, null, 2))
             $('#display-book').html(bookHtml);
         })
 }
@@ -62,16 +51,11 @@ bookSelectEl.on('change', (event) => {
 
 
 function houseMatch(houseId) {
-    // we need to go and fetch the data about this title
     console.log(houseId)
     fetch(`/api/houses/${houseId}`)
         .then(response => response.json())
         .then(response => {
             console.log(response)
-            // with the response we render stuff on page
-            //investigate the response to find the bits of data you definitely want
-            // use a template literal to be passed as html to the root
-            // We're getting error on line 34, check w/ instructor
             let houseHtml = `<h1 class="uk-heading-divider">Selected House</h1>
             <div class="uk-card uk-card-default uk-width-1-2@m">
             <div class="uk-card-header">
@@ -87,7 +71,6 @@ function houseMatch(houseId) {
             </div>
             </div>
             </div>`
-            // $('#root').text(JSON.stringify(response, null, 2))
             $('#display-house').html(houseHtml);
         })
 }
@@ -101,7 +84,6 @@ houseSelectEl.on('change', (event) => {
 
 submitBtn.on("click", function (event) {
     event.preventDefault();
-    // .val() grabs the value stored inside the textbox, then we assign the value to the var
     var characterInput = characterSearchEl.val();
     searchCharacterFunction(characterInput);
 })
@@ -113,12 +95,8 @@ var searchCharacterFunction = function (characterInput) {
             console.log(response)
             fetch(response[0].allegiances[0])
                 .then(allegiancesResponse => allegiancesResponse.json())
-                // This promise has all the previous promises passed into it, therefore we can use 'response' and 'allegiancesResponse'
                 .then(allegiancesResponse => {
                     console.log(allegiancesResponse);
-                    // with the response we render stuff on page
-                    //investigate the response to find the bits of data you definitely want
-                    // use a template literal to be passed as html to the root
                     let characterHtml = `
                     <h1 class="uk-heading-divider uk-card-title">Searched Character</h1>
                     <div class="uk-card uk-card-default uk-width-1-2@m">

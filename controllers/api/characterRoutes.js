@@ -2,7 +2,6 @@ const router = require('express').Router();
 const axios = require('axios');
 const Character = require('../../models/SavedCharacters')
 
-// /api/characters
 router.get('/:character', (req, res) => {
     let apiUrl = `https://www.anapioficeandfire.com/api/characters/?name=${req.params.character}`
     axios.get(apiUrl)
@@ -43,8 +42,6 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // Where is this action method sending the data from the body of the fetch request? Why?
-  // It is sending the data to the Model so that one dish can be updated with new data in the database.
   try {
     const character = await Character.update(
       {
@@ -60,8 +57,6 @@ router.put('/:id', async (req, res) => {
         },
       }
     );
-    // If the database is updated successfully, what happens to the updated data below?
-    // The updated data (character) is then sent back to handler that dispatched the fetch request.
     res.status(200).json(character);
   } catch (err) {
     res.status(500).json(err);
